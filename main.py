@@ -15,7 +15,21 @@ def encode(numbers):
             newNumber += str(newDigit)
 
         return newNumber
+#Michael Pierre-Canel
+def decode(newNumbers):
+    if len(newNumbers) == 8:
+        for digit in newNumbers:
+            newDigit = int(digit) - 3
 
+            if newDigit > 9:
+                newDigit = str(newDigit)
+                listdigit = list(newDigit)
+                newDigit = listdigit[1]
+
+            newNumbers += str(newDigit)
+
+        return newNumbers
+        
 #main logic
 if __name__ == '__main__':
     condition = True
