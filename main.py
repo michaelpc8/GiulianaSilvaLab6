@@ -1,5 +1,5 @@
 #Giuliana Silva
-
+#TEST
 #encode function
 def encode(numbers):
     newNumber = ""
